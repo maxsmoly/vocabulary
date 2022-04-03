@@ -57,21 +57,30 @@ let word = document.querySelector('.word')
 let trnsWord = document.querySelector('.trnsWord')
 
 function AddNewWord() {
-	let itemObj = {}
-	itemObj.word = inputLeft.value.toLowerCase()
-	itemObj.trns = inputRight.value.toLowerCase()
-	let ser = JSON.stringify(itemObj)
-	localStorage.setItem(inputLeft.value, ser)
-	let liWord = document.createElement('li')
-	liWord.innerHTML = `${itemObj.word}`
-	word.append(liWord)
-	let liTrns = document.createElement('li')
-	liTrns.innerHTML = `${itemObj.trns}`
-	trnsWord.append(liTrns)
+	if (inputLeft.value && inputRight.value !== '') {
+		let itemObj = {}
+		itemObj.word = inputLeft.value.toLowerCase()
+		itemObj.trns = inputRight.value.toLowerCase()
+		let ser = JSON.stringify(itemObj)
+		localStorage.setItem(inputLeft.value, ser)
+
+		let parseObj = localStorage.getItem(`${inputLeft.value}`)
+		// JSON.parse(parseObj)
+		console.log(parseObj)
+		let liWord = document.createElement('li')
+		liWord.innerHTML = `${itemObj.word}`
+		word.append(liWord)
+		let liTrns = document.createElement('li')
+		liTrns.innerHTML = `${itemObj.trns}`
+		trnsWord.append(liTrns)
+		inputLeft.value = ''
+		inputRight.value = ''
+	} else {
+		alert('нет ввода')
+	}
 
 	// trnsWord.innerHTML = `<li>${itemObj.trns}</li>`
-	// inputLeft.value = ''
-	// inputRight.value = ''
+
 	// location.reload()
 }
 
