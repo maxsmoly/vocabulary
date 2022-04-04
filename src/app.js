@@ -78,10 +78,20 @@ function AddNewWord() {
 	} else {
 		alert('нет ввода')
 	}
+}
 
-	// trnsWord.innerHTML = `<li>${itemObj.trns}</li>`
-
-	// location.reload()
+function showStorage() {
+	for (let i = 0; i < localStorage.length; i++) {
+		let showObj = JSON.parse(localStorage.getItem(`${localStorage.key(i)}`))
+		let liWord = document.createElement('li')
+		liWord.innerHTML = `${showObj.word}`
+		word.append(liWord)
+		let liTrns = document.createElement('li')
+		liTrns.innerHTML = `${showObj.trns}`
+		trnsWord.append(liTrns)
+	}
 }
 
 addBtn.addEventListener('click', AddNewWord)
+
+showStorage()
