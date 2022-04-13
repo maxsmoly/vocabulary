@@ -6,8 +6,8 @@ function renderDiv(classname, parent) {
 	div.classList.add('scale-up-top')
 	parent.append(div)
 }
-renderDiv('left', root)
-renderDiv('right', root)
+// renderDiv('left', root)
+// renderDiv('right', root)
 
 function createNode(parent, tagName, classname, animation = false) {
 	let parentElem = document.querySelector(`.${parent}`)
@@ -17,8 +17,8 @@ function createNode(parent, tagName, classname, animation = false) {
 	parentElem.append(tagElem)
 }
 
-createNode('left', 'input', 'leftElem', 'scale-up-top')
-createNode('right', 'input', 'rightElem', 'scale-up-top')
+// createNode('left', 'input', 'leftElem', 'scale-up-top')
+// createNode('right', 'input', 'rightElem', 'scale-up-top')
 
 function createBtn(classname) {
 	let addBtn = document.createElement('button')
@@ -27,7 +27,7 @@ function createBtn(classname) {
 	root.after(addBtn)
 }
 
-createBtn('addBtn')
+// createBtn('addBtn')
 
 let inputLeft = document.querySelector('.leftElem')
 inputLeft.setAttribute('placeholder', 'add new word')
@@ -43,15 +43,15 @@ function createListDIV() {
 	div.className = 'mainList'
 	addBtn.after(div)
 }
-createListDIV()
+// createListDIV()
 
 let mainList = document.querySelector('.mainList')
 
-renderDiv('leftList', mainList)
-renderDiv('rightList', mainList)
+// renderDiv('leftList', mainList)
+// renderDiv('rightList', mainList)
 
-createNode('leftList', 'ul', 'word', 'scale-up-top')
-createNode('rightList', 'ul', 'trnsWord', 'scale-up-top')
+// createNode('leftList', 'ul', 'word', 'scale-up-top')
+// createNode('rightList', 'ul', 'trnsWord', 'scale-up-top')
 
 let word = document.querySelector('.word')
 let trnsWord = document.querySelector('.trnsWord')
@@ -94,4 +94,4 @@ function showStorage() {
 
 addBtn.addEventListener('click', AddNewWord)
 
-showStorage()
+// showStorage()
