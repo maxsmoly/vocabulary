@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/styles.css" />
+
 		<title>Vocabulary</title>
 	</head>
 	<body>
@@ -12,14 +13,149 @@
 			<nav class="navigation">
 				<div class="navContent">
 					<div class="navLogo"></div>
-					<div class="navSearch"></div>
-					<div class="navBar"></div>
+					<div class="navSearch">
+						<div class="searchInput">
+							<input type="search" placeholder="Поиск" />
+							<button>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="25"
+									height="25"
+									fill="#CECECE"
+									font-weight="bold"
+									class="bi bi-search"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="navBar">
+						<a href="#" class="plus">
+							<button>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="25"
+									height="25"
+									fill="currentColor"
+									class="bi bi-plus-circle"
+									viewBox="0 0 16 16"
+								>
+									<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+									<path
+										d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+									/>
+								</svg>
+							</button>
+						</a>
+						<a href="#" class="favorite">
+							<button>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="25"
+									height="25"
+									fill="currentColor"
+									class="bi bi-heart"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+									/>
+								</svg>
+							</button>
+						</a>
+						<a href="#" class="award">
+							<button>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="25"
+									height="25"
+									fill="#F3A62A"
+									class="bi bi-award-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"
+									/>
+									<path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+								</svg>
+							</button>
+						</a>
+						<a href="#" class="blockBio">
+							<button>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="25"
+									height="25"
+									fill="currentColor"
+									class="bi bi-arrow-up-circle"
+									viewBox="0 0 16 16"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+									/>
+								</svg>
+							</button>
+						</a>
+						<a href="#" class="darkMode">
+							<button>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="25"
+									height="25"
+									fill="currentColor"
+									class="bi bi-moon"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
+									/>
+								</svg>
+							</button>
+						</a>
+						<a href="#" class="settings">
+							<button>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="25"
+									height="25"
+									fill="currentColor"
+									class="bi bi-gear-wide"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z"
+									/>
+								</svg>
+							</button>
+						</a>
+					</div>
 				</div>
 			</nav>
 			<header class="header">
-				<div class="headerAvatar"></div>
-				<div class="headerBio"></div>
+				<div class="headerAvatar">
+					<div class="avatar">
+						<button class="addAvatar">push</button>
+					</div>
+				</div>
+				<div class="headerBio">
+					<h1>smolyakov max</h1>
+					<h2><q>Lorem ipsum dolor sit amet.</q></h2>
+
+					<div class="bioResult">
+						<h3>2121<span> добавлено</span></h3>
+						<h3>2121<span> выучено</span></h3>
+						<h3>2121<span> учу</span></h3>
+						<h3>21212121<span> время</span></h3>
+					</div>
+				</div>
 			</header>
+			<div class="runLeft"></div>
+			<!--ЛИНИЯ-->
 			<div class="runLine">
 				<ul>
 					<li>item1</li>
@@ -36,6 +172,8 @@
 					<li>item7</li>
 				</ul>
 			</div>
+			<div class="runRight"></div>
+			<!--ЛИНИЯ-->
 			<main class="mainContent">
 				<h2 class="contentTitle">Человек</h2>
 				<div class="content">
